@@ -635,6 +635,32 @@ address {
 .footer-bottom-link:is(:hover, :focus) { color: var(--white); }
 
 
+.go-top {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  width: 35px;
+  height: 35px;
+  background: var(--bright-navy-blue);
+  color: var(--white);
+  display: grid;
+  place-items: center;
+  font-size: 18px;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.5);
+  opacity: 0;
+  transform: translateY(10px);
+  visibility: hidden;
+  transition: var(--transition);
+}
+
+.go-top.active {
+  opacity: 0.8;
+  transform: translateY(0);
+  visibility: visible;
+}
+
+.go-top:is(:hover, :focus) { opacity: 1; }
 
 
 /*
@@ -734,9 +760,6 @@ address {
   .footer-bottom-list { justify-content: flex-end; }
 
 }
-
-
-
 
 
 /**
