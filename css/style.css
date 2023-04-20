@@ -454,7 +454,68 @@ body { background: var(--white); }
 
 .specialties .btn { margin-inline: auto; }
 
+.morespecialties {
+   padding-block: var(--section-padding);
 
+   background-image: url("../images/backgroundspe.jpg");
+ }
+
+.morespecialties-list,
+.morespecialties-list > li:not(:last-child) { margin-bottom: 30px; }
+
+.morespecialties-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-25);
+  height: 430px;
+}
+
+.morespecialties-card .card-img { height: 100%; }
+
+.morespecialties-card .card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.morespecialties-card .card-content {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background: var(--white);
+  border-radius: var(--radius-25);
+  padding: 20px;
+}
+
+
+.morespecialties-card .card-rating {
+  background: var(--deep-red);
+  color: var(--white);
+  position: absolute;
+  top: 0;
+  right: 25px;
+  display: flex;
+  align-items: center;
+  gap: 1px;
+  transform: translateY(-50%);
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.morespecialties-card .card-subtitle {
+  color: var(--black-coral);
+  font-size: var(--fs-6);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.morespecialties-card .card-title { margin-bottom: 5px; }
+
+.morespecialties-card :is(.card-subtitle, .card-title) > a { color: inherit; }
+
+.morespecialties .btn { margin-inline: auto; }
 
 
 
@@ -955,7 +1016,7 @@ address {
 
 
   /**
-   * CTA 
+   * CTA
    */
 
   .cta .section-title { max-width: 25ch; }
