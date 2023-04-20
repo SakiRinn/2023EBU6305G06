@@ -6,6 +6,7 @@
 
   --united-nations-blue: hsl(214, 56%, 58%);
   --bright-navy-blue: hsl(214, 57%, 51%);
+  --black-coral: hsl(225, 8%, 42%);
   --yale-blue: hsl(214, 72%, 33%);
   --gunmetal: hsl(206, 34%, 20%);
   --white: hsl(0, 0%, 100%);
@@ -201,7 +202,7 @@ body { background: var(--white); }
 }
 
 .search{
-  width: 50px;
+  width: 50px;            
   margin: auto;
   border-color: var(--white);
   background-color: var(--bright-navy-blue);
