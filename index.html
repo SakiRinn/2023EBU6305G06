@@ -38,7 +38,7 @@
 
       <div class="header-top">
         <div class="container">
-          <a href="tel:+01123456790" class="helpline-box">
+          <a href="tel:+8612345679000" class="helpline-box">
             <div class="icon-box">
               <ion-icon name="call-outline"></ion-icon>
             </div>
@@ -46,12 +46,16 @@
             <div class="wrapper">
               <p class="helpline-title">For Further Inquires :</p>
 
-              <p class="helpline-number">+01 6666 8888</p>
+              <p class="helpline-number">+86 123 4567 9000</p>
             </div>
           </a>
 
           <a href="#" class="logo">
-            <img src="./images/logo.png" width="70" height="60" alt="Tourly logo"
+            <img
+              src="./images/logo.png"
+              width="70"
+              height="60"
+              alt="Tourly logo"
             />
           </a>
 
@@ -113,7 +117,9 @@
                 <a href="#home" class="navbar-link" data-nav-link>home</a>
               </li>
               <li>
-                <a href="#specialties" class="navbar-link" data-nav-link>food</a>
+                <a href="#specialties" class="navbar-link" data-nav-link
+                  >food</a
+                >
               </li>
 
               <li>
@@ -125,12 +131,19 @@
               </li>
 
               <li>
-                <a href="#contact" class="navbar-link" data-nav-link>contact us</a>
+                <a href="#contact" class="navbar-link" data-nav-link
+                  >contact us</a
+                >
               </li>
             </ul>
           </nav>
 
-          <button class="btn btn-primary">Book Now</button>
+          <button
+            class="btn btn-primary"
+            onclick="window.location.href='index.html#hotel'"
+          >
+            Book Now
+          </button>
         </div>
       </div>
     </header>
@@ -152,10 +165,86 @@
             </p>
 
             <div class="btn-group">
-              <button class="btn btn-primary">Learn more</button>
+              <button
+                class="btn btn-primary"
+                onclick="window.location.href='#specialties'"
+              >
+                Learn more
+              </button>
 
-              <button class="btn btn-secondary">Book now</button>
+              <button
+                class="btn btn-secondary"
+                onclick="window.location.href='index.html#hotel'"
+              >
+                Book now
+              </button>
             </div>
+          </div>
+        </section>
+
+        <!--
+        - #TOUR SEARCH
+      -->
+
+        <section class="tour-search">
+          <div class="container">
+            <form action="" class="tour-search-form">
+              <div class="input-wrapper">
+                <label for="destination" class="input-label"
+                  >Search Destination*</label
+                >
+
+                <input
+                  type="text"
+                  name="destination"
+                  id="destination"
+                  required
+                  placeholder="Enter Destination"
+                  class="input-field"
+                />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="people" class="input-label">Pax Number*</label>
+
+                <input
+                  type="number"
+                  name="people"
+                  id="people"
+                  required
+                  placeholder="No.of People"
+                  class="input-field"
+                />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="checkin" class="input-label">Checkin Date**</label>
+
+                <input
+                  type="date"
+                  name="checkin"
+                  id="checkin"
+                  required
+                  class="input-field"
+                />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="checkout" class="input-label">Checkout Date*</label>
+
+                <input
+                  type="date"
+                  name="checkout"
+                  id="checkout"
+                  required
+                  class="input-field"
+                />
+              </div>
+
+              <button type="submit" class="btn btn-secondary">
+                Inquire now
+              </button>
+            </form>
           </div>
         </section>
 
@@ -267,13 +356,22 @@
                       <a href="#">Bo Bo's chicken</a>
                     </h3>
 
-                    <p class="card-text">The "Bo Bo" is actually a tile pot, the outside of the bowl is painted with red and yellow porcelain dragon pattern</p>
+                    <p class="card-text">
+                      The "Bo Bo" is actually a tile pot, the outside of the
+                      bowl is painted with red and yellow porcelain dragon
+                      pattern
+                    </p>
                   </div>
                 </div>
               </li>
             </ul>
 
-            <button class="btn btn-primary" onclick="window.location.href='morespecialties.html'">View All Specialties</button>
+            <button
+              class="btn btn-primary"
+              onclick="window.location.href='morespecialties.html'"
+            >
+              View All Specialties
+            </button>
           </div>
         </section>
 
@@ -323,54 +421,51 @@
 
         <section class="hotel" id="hotel">
           <div class="container">
-
             <p class="section-subtitle">Popular Hotels</p>
 
             <h2 class="h2 section-title">Book a Hotel</h2>
 
             <p class="section-text">
-              Welcome to Chengdu! It is a city rich in history and culture,
-              and it is also a city famous for its gastronomy.
-              Hope you have a pleasant and unforgettable time here!
+              Welcome to Chengdu! It is a city rich in history and culture, and
+              it is also a city famous for its gastronomy. Hope you have a
+              pleasant and unforgettable time here!
             </p>
 
             <ul class="hotel-list">
-
               <li>
                 <div class="hotel-card">
-
                   <figure class="card-banner">
-                    <img src="./images/hotel-1.jpg" alt="Shangri-La Hotel, Chengdu" loading="lazy">
+                    <img
+                      src="./images/hotel-1.jpg"
+                      alt="Shangri-La Hotel, Chengdu"
+                      loading="lazy"
+                    />
                   </figure>
 
                   <div class="card-content">
-
                     <h3 class="h3 card-title">Shangri-La Hotel, Chengdu</h3>
 
                     <p class="card-text">
                       The hotel is strategically located in the Jinjiang River,
-                      close to Jiuyan Bridge and Lan Kwai Fong,
-                      a nightlife celebrity check-in place in Chengdu.
+                      close to Jiuyan Bridge and Lan Kwai Fong, a nightlife
+                      celebrity check-in place in Chengdu.
                     </p>
 
                     <ul class="card-meta-list">
-
                       <li class="card-meta-item">
                         <div class="meta-box">
                           <ion-icon name="location"></ion-icon>
 
-                          <p class="text">No. 6 Binjiang Road, Jinjiang District, Chengdu</p>
+                          <p class="text">
+                            No. 6 Binjiang Road, Jinjiang District, Chengdu
+                          </p>
                         </div>
                       </li>
-
                     </ul>
-
                   </div>
 
                   <div class="card-price">
-
                     <div class="wrapper">
-
                       <p class="reviews">(6453 reviews)</p>
 
                       <div class="card-rating">
@@ -380,54 +475,54 @@
                         <ion-icon name="star"></ion-icon>
                         <ion-icon name="star"></ion-icon>
                       </div>
-
                     </div>
 
-                    <p class="price">
-                      ¥1420
-                    </p>
+                    <p class="price">¥720</p>
 
-                    <button class="btn btn-secondary">Book Now</button>
-
+                    <button
+                      class="btn btn-secondary"
+                      onclick="window.location.href='https://hotels.ctrip.com/hotels/detail/?hotelId=425825'"
+                    >
+                      Book Now
+                    </button>
                   </div>
-
                 </div>
               </li>
 
               <li>
                 <div class="hotel-card">
-
                   <figure class="card-banner">
-                    <img src="./images/hotel-2.jpg" alt="Nihao Hotel Chengdu" loading="lazy">
+                    <img
+                      src="./images/hotel-2.jpg"
+                      alt="Nihao Hotel Chengdu"
+                      loading="lazy"
+                    />
                   </figure>
 
                   <div class="card-content">
-
                     <h3 class="h3 card-title">Nihao Hotel Chengdu</h3>
 
                     <p class="card-text">
-                      It is a high-end atmosphere and cheap price,
-                      and you can also enjoy a free pick-up service, suitable for familiy trip.
+                      It is a high-end atmosphere and cheap price, and you can
+                      also enjoy a free pick-up service, suitable for familiy
+                      trip.
                     </p>
 
                     <ul class="card-meta-list">
-
                       <li class="card-meta-item">
                         <div class="meta-box">
                           <ion-icon name="location"></ion-icon>
 
-                          <p class="text">Jinjiang District, 38 Xiangyang Street,Chengdu</p>
+                          <p class="text">
+                            Jinjiang District, 38 Xiangyang Street,Chengdu
+                          </p>
                         </div>
                       </li>
-
                     </ul>
-
                   </div>
 
                   <div class="card-price">
-
                     <div class="wrapper">
-
                       <p class="reviews">(7531 reviews)</p>
 
                       <div class="card-rating">
@@ -437,55 +532,56 @@
                         <ion-icon name="star"></ion-icon>
                         <ion-icon name="star-half"></ion-icon>
                       </div>
-
                     </div>
 
-                    <p class="price">
-                      ¥520
-                    </p>
+                    <p class="price">¥520</p>
 
-                    <button class="btn btn-secondary">Book Now</button>
-
+                    <button
+                      class="btn btn-secondary"
+                      onclick="window.location.href='https://hotels.ctrip.com/hotels/14995431.html'"
+                    >
+                      Book Now
+                    </button>
                   </div>
-
                 </div>
               </li>
 
               <li>
                 <div class="hotel-card">
-
                   <figure class="card-banner">
-                    <img src="./images/hotel-3.jpg" alt="Niccolo Chengdu" loading="lazy">
+                    <img
+                      src="./images/hotel-3.jpg"
+                      alt="Niccolo Chengdu"
+                      loading="lazy"
+                    />
                   </figure>
 
                   <div class="card-content">
-
                     <h3 class="h3 card-title">Niccolo Chengdu</h3>
 
                     <p class="card-text">
-                      The hotel is located in Chunxi Road, Taikoo Li business district,
-                      only 19km from Shuangliu International Airport and 7km from Chengdu Railway Station,
-                      providing passengers with a variety of convenient transportation options.
+                      The hotel is located in Chunxi Road, Taikoo Li business
+                      district, only 19km from Shuangliu International Airport
+                      and 7km from Chengdu Railway Station, providing passengers
+                      with a variety of convenient transportation options.
                     </p>
 
                     <ul class="card-meta-list">
-
                       <li class="card-meta-item">
                         <div class="meta-box">
                           <ion-icon name="location"></ion-icon>
 
-                          <p class="text">Tower 3, Chengdu IFS, Hongxing Road, Jinjiang District</p>
+                          <p class="text">
+                            Tower 3, Chengdu IFS, Hongxing Road, Jinjiang
+                            District
+                          </p>
                         </div>
                       </li>
-
                     </ul>
-
                   </div>
 
                   <div class="card-price">
-
                     <div class="wrapper">
-
                       <p class="reviews">(5020 reviews)</p>
 
                       <div class="card-rating">
@@ -495,24 +591,27 @@
                         <ion-icon name="star"></ion-icon>
                         <ion-icon name="star"></ion-icon>
                       </div>
-
                     </div>
 
-                    <p class="price">
-                      ¥1420
-                    </p>
+                    <p class="price">¥1420</p>
 
-                    <button class="btn btn-secondary">Book Now</button>
-
+                    <button
+                      class="btn btn-secondary"
+                      onclick="window.location.href='https://hotels.ctrip.com/hotels/1666127'"
+                    >
+                      Book Now
+                    </button>
                   </div>
-
                 </div>
               </li>
-
             </ul>
 
-            <button class="btn btn-primary" onclick="window.location.href='hotels.html'">View All Hotels</button>
-
+            <button
+              class="btn btn-primary"
+              onclick="window.location.href='hotels.html'"
+            >
+              View All Hotels
+            </button>
           </div>
         </section>
         <section class="cta" id="contact">
@@ -531,7 +630,12 @@
               </p>
             </div>
 
-            <button class="btn btn-secondary">Contact Us !</button>
+            <button
+              class="btn btn-secondary"
+              onclick="window.location.href='http://www.chengdu.gov.cn/english/'"
+            >
+              Contact Us !
+            </button>
           </div>
         </section>
       </article>
@@ -593,10 +697,24 @@
                 name="email"
                 class="input-field"
                 placeholder="Enter Your Email"
+                id="email"
                 required
               />
 
-              <button type="submit" class="btn btn-secondary">Subscribe</button>
+              <script>
+                function sendMail() {
+                  var emailAddress = document.getElementById("email").value;
+                  var mailtoLink = "mailto:" + emailAddress;
+                  window.location.href = mailtoLink;
+                }
+              </script>
+              <button
+                type="submit"
+                class="btn btn-secondary"
+                onclick="sendMail()"
+              >
+                Subscribe
+              </button>
             </form>
           </div>
         </div>
@@ -625,8 +743,6 @@
       </div>
     </footer>
 
-
-
     <!--
       - #GO TO TOP
     -->
@@ -636,10 +752,16 @@
 
     <script src="./js/script.js"></script>
 
-  <!--
+    <!--
     - ionicons
   -->
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
