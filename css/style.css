@@ -666,7 +666,23 @@ body { background: var(--white); }
 
 .hotel .btn { margin-inline: auto; }
 
+.hotels-page {
+  padding-block: var(--section-padding);
+  /* background-image: url("../images/backgroundspe.jpg"); */
+}
 
+.hotels-intro {
+  background-image: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: hsla(0, 0%, 0%, 0.7);
+  background-blend-mode: overlay;
+  display: grid;
+  place-items: center;
+  min-height: 140px;
+  padding-top: 125px;
+}
 
 
 /*
@@ -1034,21 +1050,21 @@ address {
    .hotel-list { margin-bottom: 50px; }
 
    .hotel-list > li:not(:last-child) { margin-bottom: 40px; }
- 
+
    .hotel-card {
      display: grid;
      grid-template-columns: 1.3fr 1.5fr 1fr;
    }
- 
+
    .hotel-card .card-banner { height: 100%; }
- 
+
    .hotel-card .card-content { padding: 40px; }
- 
+
    .hotel-card .card-price {
      display: grid;
      place-content: center;
    }
- 
+
    .hotel-card .card-price .wrapper { margin-bottom: 15px; }
 
 
